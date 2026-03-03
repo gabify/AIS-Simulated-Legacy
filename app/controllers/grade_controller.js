@@ -30,7 +30,7 @@ const getGradesUsingStudentId = async(req, res) =>{
     const {studentId} = req.params
 
     try{
-        const grades = await Grade.findOne({studentId});
+        const grades = await Grade.find({studentId});
         res.status(200).json(grades);
     }catch(err){
         console.log(err);

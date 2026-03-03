@@ -32,7 +32,7 @@ const getEnrollmentUsingStudentId = async(req, res) =>{
     const {studentId} = req.params
 
     try{
-        const enrollments = await Enrollment.findOne({studentId});
+        const enrollments = await Enrollment.find({studentId});
         res.status(200).json(enrollments);
     }catch(err){
         console.log(err);
