@@ -10,40 +10,6 @@ The IAS is composed of four internal subsystems:
 - Enrollment Record Management
 - Grading System
 
-### Student Profile Management
-Responsible for maintaining student identity records.
-
-Core Functions:
-- Create Student
-- View All Students
-- View Student by ID
-
-Note:
-Student ID is randomly generated strings.
-
-### Course Management
-Maintains course catalog information.
-
-Core Functions:
-- Create Course
-- View Courses
-
-### Enrollment Record Management
-Handles student course enrollments per academic term.
-
-### Grading System
-Stores final grades submitted by instructors.
-
-Core Functions:
-- Create Grade
-- View All Grades
-- View Grades by Student ID
-
-Core Functions:
-- Add Enrolled Course by Student ID
-- View Enrollment by Student ID
-- View All Enrollments
-
 ## Data Considerations
 - Each module maintains its own data model.
 - No global schema enforcement exists across modules.
@@ -63,22 +29,22 @@ POST /students
 
 - Course management
 ``` Bash
-GET /api/courses
-POST /api/courses
+GET /api/course
+POST /api/course
 ```
 
 - Enrollment record management
 ``` Bash
-GET /api/enrollments
-GET /api/enrollments/{studentId}
-POST /enrollments
+GET /api/enrollment
+GET /api/enrollment/{studentId}
+POST /enrollment
 ```
 
 - Grading system
 ``` Bash
-GET /api/grades
-GET /api/grades/{studentId}
-POST /api/grades
+GET /api/grade
+GET /api/grade/{studentId}
+POST /api/grade
 ```
 
 ## Academic Exercise Context
