@@ -29,22 +29,22 @@ POST /students
 
 - Course management
 ``` Bash
-GET /api/courses
-POST /api/courses
+GET /api/course
+POST /api/course
 ```
 
 - Enrollment record management
 ``` Bash
-GET /api/enrollments
-GET /api/enrollments/{studentId}
-POST /enrollments
+GET /api/enrollment
+GET /api/enrollment/{studentId}
+POST /enrollment
 ```
 
 - Grading system
 ``` Bash
-GET /api/grades
+GET /api/grade
 GET /api/grades/{studentId}
-POST /api/grades
+POST /api/grade
 ```
 
 ## Academic Exercise Context
