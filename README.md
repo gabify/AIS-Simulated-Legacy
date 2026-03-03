@@ -43,7 +43,7 @@ POST /enrollment
 - Grading system
 ``` Bash
 GET /api/grade
-GET /api/grades/{studentId}
+GET /api/grade/{studentId}
 POST /api/grade
 ```
 
